@@ -1,0 +1,304 @@
+body {
+    background-color: black;
+}
+.hoja {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.fondo {
+    background-image: url(Imagenes/fondos.jpg);
+    background-size: cover;
+    width: 90%;
+    max-width: 1300px;
+    min-width: 580px;
+    height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+h1,h2,h3,p,li,ol {
+    color: white;
+}
+
+
+header {
+    display: flex;
+}
+.nombre {
+    font-size: 40px;
+    display: flex;
+    margin: 5px;
+    left: 39%; 
+    position: relative;
+}
+.linea_vertical {
+    display: flex;
+    position: relative;
+    left: 40%; 
+}
+.imagen_perfil img {
+    display: flex;
+    position: relative;
+    border-radius: 20%;
+    right: 100%;
+}
+
+
+.navegador {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    top: 55px;
+    width: 1000px;
+    left: 180px;
+}
+.navegador label {
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    position: absolute;
+    top: 460px; 
+    width: 450px; 
+}
+.información {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(70, 108, 179);
+    border-radius: 25px;
+    font-size: 25px;
+    height: 1000px;
+}
+.información, .inforamcion_perso{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+.información, hr {
+    margin-top: 0%;
+    position: absolute;
+    size: 2;
+    width: 90%;
+    left: 15px;
+}
+.información, b {
+    margin-left: 15px;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    left: 25px;
+    color: white;
+}
+.información, .contacto {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 149, 237);
+    color: white;
+    position: relative;
+}
+.información, .redes {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+    color: white;
+    position: relative;
+    background-color: rgb(100, 149, 237);
+}
+.información img {
+    height: auto;
+    width: 70px;
+}
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 25px;
+    right: 2px;
+}
+.linkelind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 30px;
+    left: 2px;
+}
+.pinterest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 35px;
+    left: 2px;
+}
+.twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 40px;
+    left: 2px;
+}
+.lista1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15px;
+}
+
+.modal-perfil, .modal-experiencia, .modal-formacion, .modal-software, .modal-idiomas {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-checkbox:checked + .modal-perfil {
+    display: flex;
+}
+.modal-checkbox:checked + .modal-experiencia {
+    display: flex;
+}
+.modal-checkbox:checked + .modal-formacion {
+    display: flex;
+}
+.modal-checkbox:checked + .modal-software {
+    display: flex;
+}
+.modal-checkbox:checked + .modal-idiomas {
+    display: flex;
+}
+.modal-checkbox {
+    display: none;
+}
+.modal-contenido {
+    background-color: #7d7d7d;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.cerrar {
+    color: #e7e5e5;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.perfil {
+    position: relative;
+    left: 5px;
+}
+.linea{
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+    width: 100%;
+    border: none;
+}
+.parrafo {
+    position: relative;
+    width: 100%;
+    bottom: 10px;
+    margin: 5px;
+}
+
+
+.Experiencia {
+    position: relative;
+    display: flex;
+    left: 5px;
+}
+.tabla {
+    position: relative;
+    display: inline-flex;
+    left: 15px;
+}
+.celda_iconos{
+    position: relative;
+    left: 95px;
+}
+.celda_desempeñado {
+    position: relative;
+    height: 25px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.trabajo {
+    position: relative;
+    height: 25px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.descripcion {
+    position: relative;
+    height: 25px;
+    color: white;
+    width: 500px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.formacion {
+    position: relative;
+    display: flex;
+    left: 5px;
+}
+.formaciones, li {
+    position: relative;
+    bottom: 10px;
+    margin: 10px;
+}
+
+.footer, .borde1 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    top: 1460px;
+    width: 1260px;
+    left: 3%;
+    height: 50px;
+    background-color: #898989;
+}
+.footer, .autor {
+    color: white;
+    text-align: center;    
+}
